@@ -1,35 +1,37 @@
-# Status: Unmaintained. Discontinued.
-This project is no longer being developed or maintained.
+# Status: Updated to support strings in current Android AOSP.
 
 ### _
 
-This is forked from the awesome but unmaintained:
+This is forked from:
+https://github.com/japgolly/svg-android/
+
+Which is forked from the awesome but unmaintained:
 http://code.google.com/p/svg-android/
 
 Changes
 =======
-* Mavenised.
-* Added SVGBuilder to allow easy specification of SVG parsing & rendering options.
-* ColorFilters can now be applied.
-* Layer opacity and hiding is now supported.
-* This library now works with Robolectric.
-* SVG viewBox attribute is now handled.
-* Numbers with exponents are handled.
-* SVGZ (gzipped svg) auto-detected and supported. (Thank @josefpavlik & @mstevens83)
-* Performance enhancements.
-* Has most community patches applied. Great work to
-  [josefpavlik](https://github.com/josefpavlik/svg-android) and
-  [mrn](https://github.com/mrn/svg-android)
+* Updated to support new strings in current Android AOSP.
 
 Maven
 =====
 Add this to your Android project's pom.xml:
 ```xml
 <dependency>
-  <groupId>com.github.japgolly.android</groupId>
-  <artifactId>svg-android</artifactId>
-	<version>2.0.6</version>
+    <groupId>com.github.jeffyhao.android</groupId>
+    <artifactId>svg-android</artifactId>
+    <version>2.0.7</version>
 </dependency>
+
+<repositories>
+    <repository>
+        <id>svg-android-mvn-repo</id>
+        <url>https://raw.github.com/jeffyhao/svg-android/mvn-repo/</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+    </repository>
+</repositories>
 ```
 
 Usage
